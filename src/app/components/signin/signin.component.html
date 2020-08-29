@@ -1,0 +1,18 @@
+<div class="login-container" style="background-image: url('assets/images/bg-01.jpg');"> 
+    <div class="container" >
+        <div class="main">
+            <form [formGroup]="signinForm" (ngSubmit)="loginUser()">
+                <h3 class="mb-3 font-weight-normal text-center"><strong>SIGN IN</strong></h3>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" formControlName="email" placeholder="Enter email" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" formControlName="password" placeholder="Password" required>
+                </div>
+                <button class="btn btn-block btn-primary">Sing in</button>
+            </form>
+        </div>
+    </div>
+</div>
